@@ -1,12 +1,15 @@
+
 .minion{
-  width: 516px;
-  height: 617px;
+  width: 400px;
+  height: 600px;
  position: fixed; 
   top: 50vh;
   left: 50vw;
   margin-top: -300px;
-  margin-left: -260px;
+  margin-left: -200px;
   background-image: url(https://cdn.discordapp.com/attachments/1074085551042469999/1084293102463897671/minion.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 /*   clip-path: circle(31.6% at 49% 52%); 
   z-index: 0;
 /*   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5)); */
@@ -42,6 +45,11 @@
   outline: none;
   }
 
+.button2.active{
+  background-color: grey;
+}
+
+
 .button1:hover {
   background-color: #04a7e9;
   box-shadow: 0px 15px 20px rgba(4, 167, 233, 0.4);
@@ -51,7 +59,7 @@
 
 
 .button2 {
-  width: 400px;
+  width: 300px;
   height: 45px;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
@@ -77,7 +85,7 @@
 
 .linkwrapper {
   margin-top: calc(50vh - 45px);
-  margin-left: 11vw;
+  margin-left: 10vw;
   font-weight: 600;
   color: black;
   font-size:2vw;
@@ -108,6 +116,7 @@
   display: block;
 }
 
+
 .kidding{
   width: 480px;
   height: 240px;
@@ -130,4 +139,36 @@
 
 .linkwrapper.active{
   display: none;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+.wrapper1{
+  top: 90%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -135px;
+  position: absolute;
+}
+
+.wrapper2{
+  top: 90%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -135px;
+  position: absolute;
+}
+  
+  .kidding{
+  width: 480px;
+  height: 240px;
+   position: fixed; 
+  margin-top: calc(50vh - 150px);
+  margin-left: 22vw;
+  background-image: url(https://cdn.discordapp.com/attachments/1074085551042469999/1084335294586822666/output-onlinegiftools.gif); 
+  display: none;
+  z-index:10;
+}
+
 }
