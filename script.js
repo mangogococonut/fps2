@@ -18,4 +18,5 @@ button2.addEventListener("click", function() {
     kidding.classList.toggle("active");
     minion.classList.toggle("active");
       linkwrapper.classList.toggle("active");
+   button2.classList.toggle("active");
 });
